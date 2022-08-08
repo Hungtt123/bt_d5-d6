@@ -1,0 +1,10 @@
+
+<nb-card *ngFor="let articles of articles">
+    <nb-card-header>{{articles.title}}</nb-card-header>
+    <nb-card-body> {{articles.description}} </nb-card-body>
+     <nb-card-footer>
+        <img src={{articles.cover_image}}/>
+          <br/>
+        <button nbButton staus="primary" (click)="toLink(articles.canonical_url)"> read more</button>
+    </nb-card-footer>
+</nb-card>

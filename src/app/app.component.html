@@ -1,0 +1,17 @@
+<nb-layout>
+  <nb-layout-header>
+    <h1 style="font-size: 1.5rem">VietNamNet</h1>
+    <span style="flex: 1 auto;"></span>
+    <button nbButton status="primary" style="float:right;">Login</button>
+  </nb-layout-header>
+  <nb-layout-footer></nb-layout-footer>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+  <nb-sidebar>
+   
+      <nb-menu [items]="items">
+      </nb-menu>
+    
+  </nb-sidebar>
+ </nb-layout>
